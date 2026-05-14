@@ -43,7 +43,6 @@
       color:white;
     }
 
-    /* Background Design */
     body::before,
     body::after{
       content:"";
@@ -74,7 +73,6 @@
       min-height:100vh;
     }
 
-    /* Profile Image */
     .profile-box{
       width:260px;
       height:260px;
@@ -93,7 +91,6 @@
       object-fit:cover;
     }
 
-    /* Title */
     .title{
       font-size:2rem;
       font-weight:800;
@@ -103,7 +100,6 @@
       text-shadow:0 0 10px rgba(255,230,0,0.5);
     }
 
-    /* Telegram Buttons */
     .telegram-btn{
       display:flex;
       align-items:center;
@@ -143,7 +139,6 @@
       flex-shrink:0;
     }
 
-    /* Managed By Link */
     .managed-link{
       display:block;
       margin-top:35px;
@@ -159,7 +154,6 @@
       transform:scale(1.05);
     }
 
-    /* Mobile Responsive */
     @media(max-width:480px){
 
       .profile-box{
@@ -198,20 +192,14 @@
     </h1>
 
     <!-- Telegram Button 1 -->
-    <a href="https://t.me/+5Y7cAov_EPVlMWM1"
-       class="telegram-btn"
-       onclick="trackTelegramClick()">
-
+    <a href="https://t.me/+5Y7cAov_EPVlMWM1" class="telegram-btn">
       <div class="icon">✓</div>
       JOIN TELEGRAM CHANNEL
       <div class="icon">✓</div>
     </a>
 
     <!-- Telegram Button 2 -->
-    <a href="https://t.me/+5Y7cAov_EPVlMWM1"
-       class="telegram-btn"
-       onclick="trackTelegramClick()">
-
+    <a href="https://t.me/+5Y7cAov_EPVlMWM1" class="telegram-btn">
       <div class="icon">✓</div>
       JOIN TELEGRAM CHANNEL
       <div class="icon">✓</div>
@@ -223,19 +211,6 @@
     </a>
 
   </div>
-
-  <!-- Telegram Click Tracking -->
-  <script>
-    function trackTelegramClick() {
-
-      fbq('track', 'Lead');
-
-      fbq('trackCustom', 'TelegramButtonClick', {
-        button_name: 'Join Telegram Channel'
-      });
-
-    }
-  </script>
 
 </body>
 </html>
