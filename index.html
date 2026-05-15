@@ -13,14 +13,26 @@
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
   n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  if(!f._fbq)f._fbq=n;
+  n.push=n;
+  n.loaded=!0;
+  n.version='2.0';
+  n.queue=[];
+  t=b.createElement(e);
+  t.async=!0;
+  t.src=v;
+  s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}
+  (window, document,'script',
   'https://connect.facebook.net/en_US/fbevents.js');
 
   fbq('init', '1336240068411208');
   fbq('track', 'PageView');
+
+  // Subscribe Event Function
+  function trackSubscribe() {
+    fbq('track', 'Subscribe');
+  }
   </script>
 
   <noscript>
@@ -119,6 +131,7 @@
       0 8px 20px rgba(255,0,0,0.35),
       inset 0 0 12px rgba(255,255,255,0.1);
       transition:0.25s;
+      cursor:pointer;
     }
 
     .telegram-btn:hover{
@@ -192,21 +205,35 @@
     </h1>
 
     <!-- Telegram Button 1 -->
-    <a href="https://t.me/+5Y7cAov_EPVlMWM1" class="telegram-btn">
+    <a 
+      href="https://t.me/+5Y7cAov_EPVlMWM1"
+      target="_blank"
+      class="telegram-btn"
+      onclick="trackSubscribe()"
+    >
       <div class="icon">✓</div>
       JOIN TELEGRAM CHANNEL
       <div class="icon">✓</div>
     </a>
 
     <!-- Telegram Button 2 -->
-    <a href="https://t.me/+5Y7cAov_EPVlMWM1" class="telegram-btn">
+    <a 
+      href="https://t.me/+5Y7cAov_EPVlMWM1"
+      target="_blank"
+      class="telegram-btn"
+      onclick="trackSubscribe()"
+    >
       <div class="icon">✓</div>
       JOIN TELEGRAM CHANNEL
       <div class="icon">✓</div>
     </a>
 
     <!-- Managed By -->
-    <a href="https://t.me/Earn_guru_07" class="managed-link">
+    <a 
+      href="https://t.me/Earn_guru_07"
+      target="_blank"
+      class="managed-link"
+    >
       ADS MANAGED BY - TEJAS ADS
     </a>
 
